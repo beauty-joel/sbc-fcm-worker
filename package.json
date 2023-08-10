@@ -1,0 +1,16 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "receive_logs_topics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dk-build": "docker build . -t beautyjoel/push-notification-worker",
+    "dk-run": "docker run --network=domain-event-drive -d beautyjoel/push-notification-worker"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
